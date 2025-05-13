@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+plotly
+pymongo
+bson
+streamlit-option-menu
+Pillow  # For PIL Image
