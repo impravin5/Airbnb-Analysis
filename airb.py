@@ -1,16 +1,12 @@
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import plotly.express as px
 import matplotlib.pyplot as plt
 import streamlit as st
 import pymongo
 from bson.decimal128 import Decimal128
 from bson import Decimal128
-from streamlit_option_menu import option_menu
-import re
 import plotly.express as px
-import os
 from PIL import Image
 
 # Extract data from Mongppdb
