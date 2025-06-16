@@ -181,14 +181,6 @@ if selected_page == "Home":
         * **Conclusions:** Summarizes the key findings and insights derived from the analysis.
         """
     )
-    st.header("Visualization Libraries ")
-    st.markdown(
-        """
-        * **Plotly Express (`plotly.express as px`):** Used to create interactive and visually appealing charts like bar plots, box plots, scatter plots, area charts, violin plots, and maps. Its ease of use and interactivity make it ideal for exploring data.
-        * **Matplotlib (`matplotlib.pyplot as plt`):** While not directly used in the main page rendering, it's a foundational library for creating static, interactive, and animated visualizations in Python. It might be used for more customized plots if needed.
-        * **Seaborn (`seaborn as sns`):** Built on top of Matplotlib, Seaborn provides a high-level interface for drawing attractive and informative statistical graphics. It simplifies the creation of complex visualizations.
-        """
-    )
     st.markdown("---")
     st.subheader("Raw Data Sample")
     st.write(df)
