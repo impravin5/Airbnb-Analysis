@@ -94,12 +94,9 @@ df["Price"] = df["Price"].apply(
 df["Cleaning_Fees"] = df["Cleaning_Fees"].apply(
     lambda x: float(str(x)) if isinstance(x, Decimal128) else x
 )
-
-# Fill NaN with median and convert to Int64
-df["Price"] = df["Price"].fillna(df["Price"].median()).astype("Int64")
-df["Cleaning_Fees"] = df["Cleaning_Fees"].fillna(df["Cleaning_Fees"].median()).astype(
-    "Int64"
-)
+# Fill NaN with mean and convert to float64
+df["Price"] = df["Price"].fillna(0)
+df["Cleaning_Fees"] = df["Cleaning_Fees"].fillna(0)
 df["Security_deposit"] = df["Security_deposit"].apply(
     lambda x: float(str(x)) if isinstance(x, Decimal128) else x
 )
